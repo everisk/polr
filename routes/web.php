@@ -73,6 +73,8 @@ Route::post('/reset_password/{username}/{recovery_key}', [UserController::class,
 
 Route::post('/admin/action/change_password', [AdminController::class, 'changePassword'])->name('change_password');
 
+
+/*
 Route::prefix('api/v2')->group(function () {
     Route::post('link_avail_check', [AjaxController::class, 'checkLinkAvailability'])->name('api_link_check');
     Route::post('admin/toggle_api_active', [AjaxController::class, 'toggleAPIActive'])->name('api_toggle_api_active');
@@ -90,3 +92,4 @@ Route::prefix('api/v2')->group(function () {
     Route::get('admin/get_admin_links', [AdminPaginationController::class, 'paginateAdminLinks'])->name('api_get_admin_links');
     Route::get('admin/get_user_links', [AdminPaginationController::class, 'paginateUserLinks'])->name('api_get_user_links');
 });
+*/
