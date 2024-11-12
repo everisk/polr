@@ -32,6 +32,7 @@ if (env('POLR_ALLOW_ACCT_CREATION')) {
 }
 
 /* Optional SAML endpoints */
+/*
 if (in_array('SAML', explode(',', env('POLR_LOGIN_MODES')))) {
     Route::get('/saml/sp/acs', [SamlController::class, 'processLogin'])->name('acs');
     Route::post('/saml/sp/acs', [SamlController::class, 'processLogin'])->name('pacs');
@@ -39,6 +40,7 @@ if (in_array('SAML', explode(',', env('POLR_LOGIN_MODES')))) {
     Route::get('/saml/sp/sls', [SamlController::class, 'processLogout'])->name('slo');
     Route::post('/saml/sp/sls', [SamlController::class, 'processLogout'])->name('pslo');
 }
+*/
 
 /* GET endpoints */
 
