@@ -29,7 +29,7 @@ class ClickHelper {
         $click = new Click;
         $click->link_id = $link->id;
         $click->ip = $ip;
-        $click->country = self::getCountry($ip);
+        //$click->country = self::getCountry($ip);
         $click->referer = $referer;
         $click->referer_host = ClickHelper::getHost($referer);
         $click->user_agent = $request->server('HTTP_USER_AGENT');
